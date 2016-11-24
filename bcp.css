@@ -1,0 +1,279 @@
+
+
+body{
+  max-width:100%;
+  background:#630D16;
+  animation-name:body;
+  animation-duration:15s;
+  animation-iteration-count:infinite;
+}
+
+#head{
+  display:flex;
+  flex-direction:row;
+  margin-left:90px;
+  width:90px;
+  height:50px;
+  background:#000000;
+  border-top:2px solid #E6E6E6;
+  border-left:2px solid #E6E6E6;
+  border-right:2px solid #E6E6E6;
+  border-radius:10px 10px 0px 0px;
+}
+
+
+#carbody{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+}
+
+#carbody > #dikki{
+  flex:1;
+  max-width:90px;
+  height:50px;
+  background:#000000;
+  border-bottom:2px solid #E6E6E6;
+  border-left:2px solid #E6E6E6;
+  border-right:2px solid #E6E6E6;
+  border-top:2px solid #E6E6E6;
+  border-radius:50px 0px 0px 0px;
+  }
+
+#carbody > #body{
+  flex:1;
+  max-width:90px;
+  height:50px;
+  background:#000000;
+  border-bottom:2px solid #E6E6E6;
+  border-top:2px solid red;
+}
+
+#carbody > #engine{
+  flex:1;
+  max-width:90px;
+  height:50px;
+  background:#000000;
+  border-bottom:2px solid #E6E6E6;
+  border-left:2px solid #E6E6E6;
+  border-right:2px solid #E6E6E6;
+  border-radius:0px 20px 10px 0px;
+  border-top:2px solid #E6E6E6;
+}
+
+#carwheel{
+  display:inline-flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  max-width:260px;
+  max-height:100px;
+  float:center;
+}
+
+#carwheel > #wheelfront{
+  flex:1;
+  width:1px;
+  height:30px;
+  background:yellow;
+  border-bottom:2px solid #E6E6E6;
+  border-left:2px solid #E6E6E6;
+  border-right:2px solid #E6E6E6;
+  animation-name:button1;
+  animation-duration:1s;
+  animation-iteration-count:infinite;
+  border-radius:100px 100px 100px 100px;
+ margin-left:20px; 
+}
+
+#carwheel > #wheelback{
+  flex:1;
+  width:60px;
+  height:30px;
+  background:yellow;
+  border-bottom:2px solid red;
+  border-left:2px solid red;
+  border-right:2px solid red;
+  border-radius:100px 100px 100px 100px;
+  transform:rotateX(180deg);
+  animation-name:button1;
+  animation-duration:1s;
+  animation-iteration-count:infinite;
+  margin-left:180px;
+  
+}
+
+
+#button{
+  float:center;
+  background:#1D1F20;
+  width:70px;
+  height:30px;
+  border:2px solid blue;
+  border-radius:10px 10px 10px 10px;
+  box-shadow:0px 1px 10px 0px;
+  animation-name:button;
+  animation-duration:1s;
+  animation-iteration-count:infinite;
+  margin-left:100px;
+}
+#police{
+  display:none;
+  color:white;
+}
+
+#button:hover #police{
+  display:block;
+  
+}
+
+@keyframes button {
+  from {
+    background:red;
+    transform:rotatey(10deg);
+    width:px;
+    }
+  to{
+    background:blue;
+    transform:rotateX(10deg);
+    }
+}
+
+@keyframes button1 {
+  from {
+    background:black;
+    transform:rotatex(180deg);
+    }
+  to{
+    background:black;
+    transform:rotatey(180deg);
+    }
+                     }
+#head > hr{
+  background:#333333;
+  margin-right:10px;
+  padding-left:35px;
+}
+
+#dikki > hr{
+  background:white;
+  margin-right:42px;
+  margin-top:39px;
+  border-radius:100px 100px 10px 10px;
+  padding:8px;
+  width:15px;
+}
+
+#engine > hr{
+  background:white;
+  margin-right:16px;
+  margin-top:39px;
+  border-radius:100px 100px 10px 10px;
+  padding:8px;
+  width:15px;
+  border-radius:1px solid red;
+}
+
+#road{
+  padding:10px;
+  background:black;
+border-radius: 0px 80px 10px 0px;
+  animation-name:road;
+  animation-duration:2s;
+}
+
+#buildone{
+  padding:100px;
+  width:10px;
+  height:10px;
+  background:black;
+border-radius: 0px 80px 10px 0px;
+  animation-name:road;
+  animation-duration:2s;
+}
+#buildtwo{
+  padding:100px;
+  background:black;
+border-radius: 0px 80px 10px 0px;
+  animation-name:road;
+  animation-duration:2s;
+}
+#buildthree{
+  margin-top:00px;
+  padding:25px;
+  height:100px;
+  background:white;
+border-radius: 0px 00px 10px 0px;
+  animation-name:road;
+  animation-duration:2s;
+}
+
+@keyframes body{
+  0%{
+    background:#d88827;
+  }
+  50%{
+    background:orange;
+    right: 100px;
+  }
+  100%{
+    background:#030730;
+  }
+}
+
+#buildings{
+  display:flex;
+  }
+#line{
+  background:red;
+  padding:100px;
+  max-width:10px;
+  max-height:1000px;
+  animation-name:buildingslight;
+animation-duration:3s;
+}
+
+#line{
+  background:red;
+  padding:100px;
+  max-width:10px;
+  max-height:1000px;
+  animation-name:buildingslight;
+animation-duration:3s;
+}
+
+#line1{
+  background:green;
+  padding:100px;
+  max-width:10px;
+  max-height:1000px;
+  animation-name:buildingslight;
+animation-duration:3s;
+}
+
+#line2{
+  background:skyblue;
+  padding:100px;
+  max-width:10px;
+  max-height:1000px;
+  animation-name:buildingslight;
+animation-duration:3s;
+}
+
+@keyframe buildingslight{
+  from{
+    background:white;
+  }
+  to{
+   background: yellow;
+  }
+  
+}
+
+#time{
+  background:;
+  max-width:40px;
+  max-height:20px;
+  padding:50px;
+  border-radius:100px 100px 100px 100px;
+  border:2px solid gray;
+}
